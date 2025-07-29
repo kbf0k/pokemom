@@ -9,11 +9,10 @@
 
 nav {
     width: 100%;
-    background-color: transparent;
     position: absolute;
+    background: linear-gradient(#1B3B6F, #1b5bc3);
+    margin: 0;
     backdrop-filter: blur(10px);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     box-shadow: 0 0 20px black;
     z-index: 1;
 }
@@ -36,14 +35,23 @@ ul li a {
 }
 
 main {
+    position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../img/fundo_pokemom.png');
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../img/fundo_pokemom.png') center/cover no-repeat;
+    filter: blur(15px) brightness(0.7);
+    z-index: -1;
+    transform: scale(1.1);
 }
 
 .container {
@@ -64,7 +72,8 @@ main {
 .pesquisa h1 {
     color: white;
     font-size: 50px;
-    text-shadow: 0 0 20px #03A7FE;
+    margin-top: 80px;
+    text-shadow: 0 0 20px #1B3B6F;
 }
 
 .pesquisa input {
@@ -73,18 +82,27 @@ main {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    border: 1px solid #03A7FE;
-    box-shadow: 0 0 20px #03A7FE;
+    border: 1px solid #1B3B6F;
+    box-shadow: 0 0 20px #1B3B6F;
     outline: none;
     padding: 8px;
 }
 
 .card_container {
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card_container .card {
+    margin: 20px;
+    background-color: #1B3B6F;
     box-shadow: 0 0 20px black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
     padding: 20px;
-    margin-top: 50px;
 }
 
 .card_container .card h1 {
@@ -99,5 +117,11 @@ main {
 }
 
 .card_container .card span {
-    color: #03A7FE;
+    color: #0062ff;
+}
+
+.card_container .card #foto {
+    display: flex;
+    align-self: center;
+    filter: drop-shadow(2px 2px 8px yellow);
 }
