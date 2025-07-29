@@ -2,8 +2,7 @@
 
 body {
   font-family: 'Oxanium', sans-serif;
-  background: #e0f7fa;
-  margin: 0;
+  background: linear-gradient(135deg, #1B3B6F, #4A90E2, #00C6FB);  margin: 0;
   padding: 0;
 }
 
@@ -20,7 +19,7 @@ h1 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 20px;
-  color: #00695c;
+  color: #1f51a1;
 }
 
 form label {
@@ -28,7 +27,7 @@ form label {
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 500;
-  color: #004d40;
+  color: #1f51a1;
 }
 
 form input[type="text"],
@@ -40,10 +39,10 @@ form input[type="file"] {
   padding: 10px;
   margin-top: 4px;
   margin-bottom: 15px;
-  border: 1px solid #b2dfdb;
+  border: 1px solid #1c4db6;
   border-radius: 8px;
   box-sizing: border-box;
-  background-color: #f1fefc;
+  background-color: #e1f5fb;
 }
 
 form textarea {
@@ -51,7 +50,7 @@ form textarea {
 }
 
 button {
-  background-color: #00796b;
+  background-color: #1f51a1;
   color: white;
   border: none;
   padding: 12px 20px;
