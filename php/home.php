@@ -1,3 +1,4 @@
+<!-- Kaique Bernardes Ferreira e Yago Roberto Gomes Moraes Nº 15 e 31 -->
 <?php
 include_once('conexao.php');
 
@@ -15,24 +16,20 @@ $result_buscar = $sql_buscar->get_result();
     <link rel="stylesheet" href="../css/home.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Listar pokemom</title>
+    <title>Início</title>
+    <link rel="icon" href="../img/pokebola.webp">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="cadastrar.php">Cadastrar</a></li>
-                <li><a href="listarYago.php">Relatório</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+    include "nav.php";
+    ?>
+
     <main>
         <div class="container">
             <div class="pesquisa">
-                <h1>Pesquisar Pokémom</h1>
-                <input type="search" id="search" list="pokemom" placeholder="Digite o nome do pokémom">
+                <h1>Pesquisar Pokémon</h1>
+                <input type="search" id="search" list="pokemom" placeholder="Digite o nome do pokémon">
             </div>
 
             <div id="resultado" style="display: none;"></div>

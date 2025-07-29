@@ -1,3 +1,4 @@
+<!-- Kaique Bernardes Ferreira e Yago Roberto Gomes Moraes Nº 15 e 31 -->
 <?php
 include "conexao.php"; // conexão com banco
 
@@ -62,6 +63,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="icon" href="../img/pokebola.webp">
 </head>
 
+<?php
+include "nav.php";
+?>
+
 <body>
     <div class="container">
         <h1>Registrar Pokémon Perdido</h1>
@@ -89,9 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <textarea name="observacoes" rows="3" placeholder="Comportamento, condição..."></textarea>
             </label>
 
-            <label>Foto (upload ou link):
-                <input type="file" name="foto" accept="image/*">
-                <br>OU<br>
+            <label>Foto (link):
                 <input type="text" name="foto" placeholder="Coloque link da imagem">
             </label>
             <button type="submit">Cadastrar Pokémon</button>

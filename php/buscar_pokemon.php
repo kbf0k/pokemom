@@ -1,3 +1,4 @@
+<!-- Kaique Bernardes Ferreira e Yago Roberto Gomes Moraes Nº 15 e 31 -->
 <?php
 include('conexao.php');
 
@@ -28,8 +29,8 @@ if (isset($_POST['search'])) {
         echo "<script>
                 Swal.fire({
                     icon: 'error',
-                    title: 'Pokemom não encontrada',
-                    text: 'Verifique o nome do Pokemom e tente novamente',
+                    title: 'Pokemon não encontrada',
+                    text: 'Verifique o nome do Pokemon e tente novamente',
                     confirmButtonColor: '#3085d6'
                 });
               </script>";

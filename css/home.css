@@ -36,12 +36,12 @@ ul li a {
 
 main {
     position: relative;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     z-index: 0;
+    min-height: 100vh;
 }
 
 main::before {
@@ -72,13 +72,13 @@ main::before {
 .pesquisa h1 {
     color: white;
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 74px;
     text-shadow: 0 0 20px #1B3B6F;
 }
 
 .pesquisa input {
     margin-top: 20px;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -92,7 +92,8 @@ main::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .card_container .card {

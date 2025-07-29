@@ -2,7 +2,6 @@
 body {
   font-family: 'Oxanium', sans-serif;
   background: linear-gradient(135deg, #1B3B6F, #4A90E2, #00C6FB);
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +18,7 @@ body {
 h1 {
   text-align: center;
   color: #1f51a1;
-  font-size: 40px;
+  font-size: 44px;
   margin-bottom: 30px;
 }
 
@@ -43,6 +42,31 @@ th {
 
 img {
   border-radius: 8px;
+}
+
+.btn-acao {
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.btn-acao.editar {
+  color: #fff;
+  background-color: #007bff;
+  padding: 8px;
+}
+
+.btn-acao.excluir {
+  color: #fff;
+  background-color: #dc3545;
+  padding: 9px;
+}
+
+.btn-acao:hover {
+  opacity: 0.85;
 }
 
 .btn {
